@@ -8,10 +8,11 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { FooterComponent } from './footer/footer.component';
 import { MainComponent } from './main/main.component';
 import { BlockcoverComponent } from './blockcover/blockcover.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
 
 
 @NgModule({
-  declarations: [HeaderComponent, ServicesComponent, AboutMeComponent, FooterComponent, MainComponent, BlockcoverComponent],
+  declarations: [HeaderComponent, ServicesComponent, AboutMeComponent, FooterComponent, MainComponent, BlockcoverComponent, TestimonialsComponent],
   imports: [
     CommonModule,
     HomeRoutingModule
