@@ -15,6 +15,7 @@ jQuery(document).ready(function($) {
 		$('.js-clone-nav').each(function() {
 			var $this = $(this);
 			$this.clone().attr('class', 'site-nav-wrap').appendTo('.site-mobile-menu-body');
+			
 		});
 
 
@@ -67,7 +68,7 @@ jQuery(document).ready(function($) {
 		$('body').on('click', '.js-menu-toggle', function(e) {
 			var $this = $(this);
 			e.preventDefault();
-
+			console.log(e);
 			if ( $('body').hasClass('offcanvas-menu') ) {
 				$('body').removeClass('offcanvas-menu');
 				$this.removeClass('active');
