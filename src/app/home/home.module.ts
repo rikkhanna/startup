@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { MainComponent } from './main/main.component';
 import { BlockcoverComponent } from './blockcover/blockcover.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { ContactModule } from '../contact/contact.module';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
   imports: [
     CommonModule,
     HomeRoutingModule
+ 
   ],
   exports:[
     HeaderComponent,

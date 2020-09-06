@@ -30,7 +30,7 @@
               "src/assets/css/bootstrap.min.css",
               "src/assets/css/jquery-ui.css",
               "src/assets/css/jquery.fancybox.min.css",
-              "src/assets/css/owl.carousal.min.css",
+              "src/assets/css/owl.carousel.min.css",
               "src/assets/css/owl.theme.default.min.css",
               "src/assets/css/style.css"
             ],
@@ -47,7 +47,7 @@
               "src/assets/js/jquery.stellar.min.js",
               "src/assets/js/jquery.sticky.js",
               "src/assets/js/main.js",
-              "src/assets/js/owl.carousal.min.js",
+              "src/assets/js/owl.carousel.min.js",
               "src/assets/js/popper.min.js"
             ]
           },
