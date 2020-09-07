@@ -39,7 +39,11 @@
               class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block"
             >
               <li>
-                <a routerLink="/" routerLinkActive="active" class="nav-link">Home</a>
+                <a 
+                  routerLink="/" 
+                  routerLinkActive="active" 
+                  [routerLinkActiveOptions]="{exact: true}"
+                  class="nav-link">Home</a>
               </li>
               <li><a routerLink="/blogs" routerLinkActive="active" class="nav-link">Blog</a></li>
               <li><a routerLink="/contact" routerLinkActive="active" class="nav-link">Contact</a></li>
