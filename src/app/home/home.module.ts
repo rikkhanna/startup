@@ -21,7 +21,8 @@ import { ContactModule } from '../contact/contact.module';
   ],
   exports:[
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    BlockcoverComponent
   ]
 })
 export class HomeModule { }
