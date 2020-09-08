@@ -1,26 +1,41 @@
 <div class="site-mobile-menu site-navbar-target">
   <div class="site-mobile-menu-header">
     <div class="site-mobile-menu-close mt-3">
-      <span class="icon-close2 js-menu-toggle"></span>
+      <span (click)="onToggleClose()" class="icon-close2 js-menu-toggle"></span>
     </div>
   </div>
-  <div class="site-mobile-menu-body"></div>
+  <div class="site-mobile-menu-body">
+    <ul
+    class="site-nav-wrap"
+  >
+  
+    <li>
+      <a 
+        routerLink="/" 
+        routerLinkActive="active" 
+        [routerLinkActiveOptions]="{exact: true}"
+        class="nav-link">Home</a>
+    </li>
+    <li><a routerLink="/blogs" routerLinkActive="active" class="nav-link">Blog</a></li>
+    <li><a routerLink="/contact" routerLinkActive="active" class="nav-link">Contact</a></li>
+  </ul>
+  </div>
 </div>
 
   <header
-  class="border-bottom border-black height site-navbar py-md-4  site-navbar-target"
+  class="border-bottom border-black height site-navbar  site-navbar-target"
   role="banner"
 >
   <div class="container align-items-center" >
     <div class="row ">
-      <div class="col-10 col-md-6 col-xl-2 d-block d-lg-none">
+      <div class="col-10 col-md-6 col-xl-2 d-block d-lg-none mt-2">
         <h1 class="mb-0 site-logo">
           <a href="#" class="text-black h2 mb-0"
             >Indian Admin<span class="text-primary">.</span>
           </a>
         </h1>
       </div>
-      <div class="col-12 col-md-12 main-menu">
+      <div class="col-12 col-md-12 main-menu mt-2">
         <div class="row">
           <div class="col-lg-6">
             <h1 class="mb-0 site-logo">
@@ -31,12 +46,11 @@
           </div>
           <div class="col-lg-6">
             <nav
-            class="site-navigation position-relative text-center"
+            class="site-navigation position-relative text-center mt-1"
             role="navigation"
           >
-          
             <ul
-              class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block"
+              class=" site-menu main-menu js-clone-nav mr-auto d-none d-lg-block"
             >
               <li>
                 <a 
@@ -51,11 +65,13 @@
           </nav>    
           </div>
         </div>
+
         
         
       </div>
-      <div class="col-2 col-md-6 d-inline-block d-lg-none ml-md-0 pt-1">
+      <div class="col-2 col-md-6 d-inline-block d-lg-none ml-md-0 pt-1 mt-2">
         <a
+          (click)="onToggle()"
           href="#"
           class="site-menu-toggle js-menu-toggle text-black float-right"
           ><span class="icon-menu h3"></span

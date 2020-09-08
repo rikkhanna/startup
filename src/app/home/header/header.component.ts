@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private render: Renderer2) { }
 
   ngOnInit(): void {
   }
 
+  onToggle(): void{
+    this.render.addClass(document.body, 'offcanvas-menu');
+  }
+  onToggleClose(): void{
+    this.render.removeClass(document.body, 'offcanvas-menu');
+  }
 }

@@ -12,11 +12,11 @@ jQuery(document).ready(function($) {
 
 	var siteMenuClone = function() {
 
-		$('.js-clone-nav').each(function() {
-			var $this = $(this);
-			$this.clone().attr('class', 'site-nav-wrap').appendTo('.site-mobile-menu-body');
-			
-		});
+		// $('.js-clone-nav').each(function() {
+		// 	var $this = $(this);
+		// 	$this.clone().attr('class', 'site-nav-wrap').appendTo('.site-mobile-menu-body');
+		// 	console.log('cloned');
+		// });
 
 
 		setTimeout(function() {
@@ -73,6 +73,7 @@ jQuery(document).ready(function($) {
 				$('body').removeClass('offcanvas-menu');
 				$this.removeClass('active');
 			} else {
+				
 				$('body').addClass('offcanvas-menu');
 				$this.addClass('active');
 			}
@@ -88,8 +89,8 @@ jQuery(document).ready(function($) {
 	    }
 		});
 	}; 
+	
 	siteMenuClone();
-
 
 	var sitePlusMinus = function() {
 		$('.js-btn-minus').on('click', function(e){
