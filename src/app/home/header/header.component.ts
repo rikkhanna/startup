@@ -10,6 +10,7 @@ export class HeaderComponent implements OnInit {
   constructor(private render: Renderer2) { }
 
   ngOnInit(): void {
+    
   }
 
   onToggle(): void{
@@ -18,4 +19,6 @@ export class HeaderComponent implements OnInit {
   onToggleClose(): void{
     this.render.removeClass(document.body, 'offcanvas-menu');
   }
+
+  
 }

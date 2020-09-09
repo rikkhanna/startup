@@ -1,6 +1,6 @@
-<div class="footer py-5 border-top text-center">
+<div class="footer py-2 border-top text-center">
   <div class="container">
-    <div class="row mb-5">
+    <div class="row mb-1">
       <div class="col-12">
         <p class="mb-0">
           <a href="#" class="p-3"><span class="icon-facebook"></span></a>
@@ -9,13 +9,20 @@
         </p>
       </div>
     </div>
+    <div class="row mb-1">
+      <div class="col-12">
+        <p class="mb-0">
+          <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="p-3">Home</a>
+          <a routerLink="/blogs" routerLinkActive="active" class="p-3">Blog</a>
+          <a routerLink="/contact" routerLinkActive="active" class="p-3">Contact</a>
+        </p>
+      </div>
+    </div>
     <div class="row">
       <div class="col-md-12">
         <p class="mb-0">
           Copyright &copy;
-          <script type="text/javascript">
-            document.write(new Date().getFullYear());
-          </script>
+          <span>{{ getFullYear() }}</span>
           All rights reserved | made with
           <i class="icon-heart" aria-hidden="true"></i> by
           <a href="#">Rishabh Khanna</a>
